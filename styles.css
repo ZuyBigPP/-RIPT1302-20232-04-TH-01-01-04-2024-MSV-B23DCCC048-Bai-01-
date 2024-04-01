@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(329deg, #3f87a6, #ebf8e1, #54524f, #f69d58, #3f87a6);
+    background-size: 300% 500%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+#clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.time-box {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+}
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0, 0 0 20px #0f0;
+    }
+    to {
+        box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+    }
+}
+.header {
+    font-family: monospace;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: rgb(5, 31, 5);
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+}
